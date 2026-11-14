@@ -1,0 +1,50 @@
+# env files
+.env*
+!.env.example
+
+# local env files
+.env*.local
+
+# SQLite database (local)
+dev.db
+dev.db-journal
+*.db
+*.db-shm
+*.db-wal
+
+# Uploads (uploaded files)
+uploads/
+
+# misc
+.DS_Store
+thumbs.db
+
+# logs
+logs/
+*.log
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# dependencies
+node_modules/
+.pnp.js
+.pnp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# temp
+tmp/
+temp/
