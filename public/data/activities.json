@@ -1,0 +1,29 @@
+[
+  {
+    "id": "act_001",
+    "title": "Pesta Perpisahan Serius",
+    "slug": "pesta-perpisahan-serius",
+    "description": "Pesta Perpisahan Serius adalah acara pernikahan yang memadukan nuansa tradisional Jawa dengan sentuhan modern dan surreal. Acara ini dirancang untuk menciptakan momen tak terlupakan bagi setiap tamu, dengan dekorasi yang kaya detail, tarian tradisional, serta foto-foto yang menangkap kesan emosional setiap detik.",
+    "category": "Pernikahan",
+    "cover_image": "/uploads/activities/act_001_cover.jpg",
+    "video_url": "/uploads/activities/act_001_video.mp4"
+  },
+  {
+    "id": "act_002",
+    "title": "Resepsimala Modern & Elegance",
+    "slug": "resepsi-moderne-elegance",
+    "description": "Resepsimala Modern & Elegance adalah perayaan pernikahan dengan desain interior ceria, kecondangan ceria, dan cahaya tak bertele-tele. Setiap sudut kompleks diciptakan agar baper terasa hangat, manis, dan macet benar.",
+    "category": "Pernikahan",
+    "cover_image": "/uploads/activities/act_002_cover.jpg",
+    "video_url": "/uploads/activities/act_002_video.mp4"
+  },
+  {
+    "id": "act_003",
+    "title": "Festival Kuliner & Seni Daerah",
+    "slug": "festival-kuliner-seni-daerah",
+    "description": "Festival Kuliner & Seni Daerah adalah perhelatan tahunan yang memperkenalkan kuliner dan seni lokal dari seluruh pelosok negeri. Tamu dapat mengonsumsi makanan khas, menonton panggung seni, serta berinteraksi dengan pelaku seni dan kuliner.",
+    "category": "Festival",
+    "cover_image": "/uploads/activities/act_003_cover.jpg",
+    "video_url": "/uploads/activities/act_003_video.mp4"
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "act_001",
+    "title": "Pesta Perpisahan Serius",
+    "slug": "pesta-perpisahan-serius",
+    "description": "Pesta Perpisahan Serius adalah acara pernikahan yang memadukan nuansa tradisional Jawa dengan sentuhan modern dan surreal. Acara ini dirancang untuk menciptakan momen tak terlupakan bagi setiap tamu, dengan dekorasi yang kaya detail, tarian tradisional, serta foto-foto yang menangkap kesan emosional setiap detik.",
+    "category": "Pernikahan",
+    "cover_image": "/uploads/activities/act_001_cover.jpg",
+    "video_url": "/uploads/activities/act_001_video.mp4",
+    "media": [
+      {
+        "id": "ek45i2g0dmwg4c727nf2ihr",
+        "activity_id": "act_001",
+        "file_url": "/uploads/activities/act_001_01.jpg",
+        "file_type": "image",
+        "sort_order": 1
+      },
+      {
+        "id": "flxn8eafcmwg4c729p819ox",
+        "activity_id": "act_001",
+        "file_url": "/uploads/activities/act_001_02.jpg",
+        "file_type": "image",
+        "sort_order": 2
+      },
+      {
+        "id": "bhgmbxdr0mwg4c72awiiffe",
+        "activity_id": "act_001",
+        "file_url": "/uploads/activities/act_001_03.jpg",
+        "file_type": "image",
+        "sort_order": 3
+      },
+      {
+        "id": "w0lj2o979mwg4c72bg7l4co",
+        "activity_id": "act_001",
+        "file_url": "/uploads/activities/act_001_04.jpg",
+        "file_type": "image",
+        "sort_order": 4
+      },
+      {
+        "id": "6syb4nfnamwg4c72fpohyyu",
+        "activity_id": "act_001",
+        "file_url": "/uploads/activities/act_001_video.mp4",
+        "file_type": "video",
+        "sort_order": 5
+      }
+    ]
+  },
+  {
+    "id": "act_002",
+    "title": "Resepsimala Modern & Elegance",
+    "slug": "resepsi-moderne-elegance",
+    "description": "Resepsimala Modern & Elegance adalah perayaan pernikahan dengan desain interior ceria, kecondangan ceria, dan cahaya tak bertele-tele. Setiap sudut kompleks diciptakan agar baper terasa hangat, manis, dan macet benar.",
+    "category": "Pernikahan",
+    "cover_image": "/uploads/activities/act_002_cover.jpg",
+    "video_url": "/uploads/activities/act_002_video.mp4",
+    "media": [
+      {
+        "id": "5s16npcugmwg4c72gnpmstl",
+        "activity_id": "act_002",
+        "file_url": "/uploads/activities/act_002_01.jpg",
+        "file_type": "image",
+        "sort_order": 1
+      },
+      {
+        "id": "58r28hueemwg4c72hmjc76m",
+        "activity_id": "act_002",
+        "file_url": "/uploads/activities/act_002_02.jpg",
+        "file_type": "image",
+        "sort_order": 2
+      },
+      {
+        "id": "xxeva5jp8mwg4c72ielyyt3",
+        "activity_id": "act_002",
+        "file_url": "/uploads/activities/act_002_03.jpg",
+        "file_type": "image",
+        "sort_order": 3
+      },
+      {
+        "id": "hi8omx6ofmwg4c72kf19bhj",
+        "activity_id": "act_002",
+        "file_url": "/uploads/activities/act_002_04.jpg",
+        "file_type": "image",
+        "sort_order": 4
+      },
+      {
+        "id": "qca5onqb7mwg4c72ltsgoy4",
+        "activity_id": "act_002",
+        "file_url": "/uploads/activities/act_002_video.mp4",
+        "file_type": "video",
+        "sort_order": 5
+      }
+    ]
+  },
+  {
+    "id": "act_003",
+    "title": "Festival Kuliner & Seni Daerah",
+    "slug": "festival-kuliner-seni-daerah",
+    "description": "Festival Kuliner & Seni Daerah adalah perhelatan tahunan yang memperkenalkan kuliner dan seni lokal dari seluruh pelosok negeri. Tamu dapat mengonsumsi makanan khas, menonton panggung seni, serta berinteraksi dengan pelaku seni dan kuliner.",
+    "category": "Festival",
+    "cover_image": "/uploads/activities/act_003_cover.jpg",
+    "video_url": "/uploads/activities/act_003_video.mp4",
+    "media": [
+      {
+        "id": "slhldazypmwg4c72o7leivz",
+        "activity_id": "act_003",
+        "file_url": "/uploads/activities/act_003_01.jpg",
+        "file_type": "image",
+        "sort_order": 1
+      },
+      {
+        "id": "r3gr4bn7xmwg4c72ponhi19",
+        "activity_id": "act_003",
+        "file_url": "/uploads/activities/act_003_02.jpg",
+        "file_type": "image",
+        "sort_order": 2
+      },
+      {
+        "id": "a15a4ozjumwg4c72r5d9n0l",
+        "activity_id": "act_003",
+        "file_url": "/uploads/activities/act_003_03.jpg",
+        "file_type": "image",
+        "sort_order": 3
+      },
+      {
+        "id": "nodqgf22bmwg4c72u1u3jhf",
+        "activity_id": "act_003",
+        "file_url": "/uploads/activities/act_003_04.jpg",
+        "file_type": "image",
+        "sort_order": 4
+      },
+      {
+        "id": "idlvm83p7mwg4c72w4lqpq7",
+        "activity_id": "act_003",
+        "file_url": "/uploads/activities/act_003_video.mp4",
+        "file_type": "video",
+        "sort_order": 5
+      }
+    ]
+  }
+]

@@ -1,11 +1,14 @@
 import Link from "next/link";
 import ImageFallback from "@/components/ImageFallback";
-import { dbGetAllActivities } from "@/lib/db";
+import {
+  getAllActivities,
+  getDate,
+} from "@/lib/activities-data";
 
-export default async function HomePage() {
-  const activities = dbGetAllActivities();
+async function HomePage() {
+  const activities = getAllActivities();
 
-  // Ambil 3 kegiatan terbaru sebagai featured (jika ada)
+  // Featured: 3 latest activities
   const featured = activities.slice(0, 3);
 
   return (
@@ -29,7 +32,6 @@ export default async function HomePage() {
             </Link>
             <Link href="/activities" className="btn btn-outline">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                <path d="M4 6h8M4 10h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                 <circle cx="7" cy="5" r="1.5" fill="currentColor" />
                 <circle cx="13" cy="9" r="1.5" fill="currentColor" />
               </svg>
@@ -47,7 +49,7 @@ export default async function HomePage() {
             <p>Beberapa perayaan terbaik yang telah kami angkat bicara</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featured.map((act) => (
+            {featured.map((act, idx) => (
               <Link href={`/activities/${act.slug}`} key={act.id} className="activity-card">
                 <ImageFallback
                   src={act.cover_image || "/uploads/activities/default-cover.jpg"}
@@ -66,7 +68,7 @@ export default async function HomePage() {
                       <circle cx="8" cy="6" r="3" stroke="#cbd5e0" strokeWidth="2" />
                       <circle cx="8" cy="6" r="1.5" fill="#cbd5e0" />
                     </svg>
-                    {new Date(act.created_at || "").toLocaleDateString("id-ID", { year: "numeric", month: "long" })}
+                    {getDate(act.created_at)}
                   </div>
                 </div>
               </Link>
@@ -80,15 +82,13 @@ export default async function HomePage() {
         <section className="section bg-gray-50">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-4xl font-bold text-gray-300">0</span>
-              <p className="text-gray-600 mt-2">Kegiatan yang telah kami rencanakan</p>
               <span className="text-4xl font-bold text-gray-300">{activities.length}</span>
-              <p className="text-gray-600 mt-2">Kegiatan yang telah kami selesaikan</p>
+              <p className="text-gray-600 mt-2">Kegiatan yang telah kami rencanakan</p>
               <span className="text-4xl font-bold text-gray-300">2024</span>
               <p className="text-gray-600 mt-2">Tahun pengalaman</p>
             </div>
             <div className="grid grid-cols-2 gap-6">
-              {activities.slice(0, 4).map((act) => (
+              {activities.slice(0, 4).map((act, idx) => (
                 <div key={act.id} className="bg-white rounded-xl overflow-hidden shadow-sm">
                   <ImageFallback
                     src={act.cover_image || "/uploads/activities/default-cover.jpg"}
@@ -132,3 +132,5 @@ export default async function HomePage() {
     </>
   );
 }
+
+export default HomePage;

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import ActivityCard from "@/components/ActivityCard";
-import { dbGetAllActivities } from "@/lib/db";
+import { getAllActivities } from "@/lib/activities-data";
 
 export default async function ActivitiesPage() {
-  const activities = dbGetAllActivities();
+  const activities = getAllActivities();
 
   return (
     <>
@@ -32,7 +32,7 @@ export default async function ActivitiesPage() {
           {activities.length === 0 ? (
             <div className="bg-white rounded-xl p-12 text-center shadow-sm">
               <p className="text-gray-500 text-lg">Belum ada kegiatan yang tercatat.</p>
-              <p className="text-gray-400 text-sm mt-2">Kegiatan masih kosong. Hubungi admin untuk menambahkan.</p>
+              <p className="text-gray-400 text-sm mt-2">Kegiatan masih kosong.</p>
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

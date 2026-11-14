@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function AboutPage() {
@@ -54,10 +55,10 @@ export default function AboutPage() {
             Portofolio
           </a>
           <ul className="nav-links">
-            <li><a href="/">Beranda</a></li>
-            <li><a href="/activities">Kegiatan</a></li>
+            <li><Link href="/">Beranda</Link></li>
+            <li><Link href="/activities">Kegiatan</Link></li>
             <li><a href="/about">Tentang</a></li>
-            <li><a href="/contact">Kontak</a></li>
+            <li><Link href="/contact">Kontak</Link></li>
           </ul>
         </div>
       </div>
