@@ -1,2 +1,2 @@
 // Re-export all data functions
-export { exportActivities, exportActivitiesWithMedia, exportMedia } from "./export-to-json";
+// Note: export-to-json.ts is only used for one-time data export, not for building
