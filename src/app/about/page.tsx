@@ -1,119 +1,60 @@
 import Link from "next/link";
-import { getProfile, getActivities } from "@/lib/db";
+import { getProfileData } from "@/lib/db-static";
 
 async function AboutPage() {
-  const profile = getProfile();
-  const activities = getActivities();
+  const profile = getProfileData();
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white shadow-sm border-b border-gray-200">
+    <>
+      <section className="bg-gradient-to-br from-blue-800 to-indigo-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <div className="w-8 h-8 bg-blue-600 rounded-md flex items-center justify-center mr-3">
-                <span className="text-white font-bold">W</span>
-              </div>
-              <Link href="/" className="font-semibold text-gray-900">
-                {profile.name || "Wisnu Pandu Hidayat"}
-              </Link>
-            </div>
-            <div className="flex items-center space-x-6">
-              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link>
-              <Link href="/activities" className="text-gray-600 hover:text-gray-900">Activities</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-              <Link href="/admin/login" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">
-                Admin Login
-              </Link>
-            </div>
-          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">About Me</h1>
+          <p className="text-xl text-blue-200 mb-8">Learn about my experience and skills</p>
         </div>
-      </nav>
+      </section>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">About Me</h1>
-            <p className="text-lg text-gray-600">
-              Learning from the past, living in the present, and working for the future.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Professional Profile</h2>
-              <div className="space-y-4 text-gray-700">
-                <p>
+      <section className="bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div id="about" className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Professional Summary</h3>
+                <p className="text-gray-700 leading-relaxed">
                   {profile.bio || "Production professional with over 8 years of experience in the food manufacturing industry specializing in Production Management, PPIC, Warehouse Operations, Supply Chain Coordination, Inventory Management, Process Improvement, and Manufacturing Excellence."}
                 </p>
-                <p>
-                  Experienced in leading cross-functional teams to improve production efficiency, optimize manpower utilization, reduce operational costs, and maintain product quality in compliance with GMP, HACCP, Food Safety, and company SOPs.
-                </p>
-                <p>
-                  Strong analytical and leadership capabilities with proven experience managing production planning, raw material control, production scheduling, factory expansion projects, utility monitoring, and continuous improvement initiatives. Adept at collaborating with Purchasing, Marketing, Sales, Engineering, QA, and Finance to achieve operational targets while ensuring safety, quality, delivery, and cost (SQDC).
-                </p>
-                <p>
-                  Seeking to contribute as a Production Manager by driving operational excellence, increasing productivity, and developing high-performance manufacturing teams.
+                <p className="text-gray-700 leading-relaxed mt-4">
+                  Experienced in leading cross-functional teams to improve production efficiency, optimize manpower utilization, reduce operational costs, and maintain product quality in compliance with GMP, HACCP, Food Safety, and company SOPs. Strong analytical and leadership capabilities with proven experience managing production planning, raw material control, production scheduling, factory expansion projects, utility monitoring, and continuous improvement initiatives.
                 </p>
               </div>
-
-              <div className="mt-6">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">Contact Information</h3>
-                <div className="space-y-2 text-gray-600">
-                  {profile.contact_email && (
-                    <p className="flex items-center">
-                      <span className="font-medium">Email:</span> {profile.contact_email}
-                    </p>
-                  )}
-                  {profile.contact_phone && (
-                    <p className="flex items-center">
-                      <span className="font-medium">Phone:</span> {profile.contact_phone}
-                    </p>
-                  )}
-                  {profile.location && (
-                    <p className="flex items-center">
-                      <span className="font-medium">Location:</span> {profile.location}
-                    </p>
-                  )}
-                  {profile.website && (
-                    <p className="flex items-center">
-                      <span className="font-medium">Website:</span> {profile.website}
-                    </p>
-                  )}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Core Competencies</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["Production Management", "CAPA", "Training & Coaching", "Production Planning", "OEE Improvement", "SOP Development", "Production Control", "Capacity Planning", "Performance Management", "Lean Manufacturing", "Warehouse Management", "Risk Management", "Kaizen", "Labor Cost Productivity", "GMP", "Root Cause Analysis", "Utility Monitoring", "HACCP", "ISO 22000", "Production KPI", "Food Safety"].map((skill) => (
+                    <span key={skill} className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Core Competencies</h3>
-              <div className="grid grid-cols-2 gap-2">
-                {["Production Management", "CAPA", "Training & Coaching", "Production Planning", "OEE Improvement", "SOP Development", "Production Control", "Capacity Planning", "Performance Management", "Lean Manufacturing", "Warehouse Management", "Risk Management", "Kaizen", "Labor Cost Productivity", "GMP", "Root Cause Analysis", "Utility Monitoring", "HACCP", "ISO 22000", "Production KPI", "Food Safety"].map((skill) => (
-                  <span key={skill} className="px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-700">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
 
-          <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Education</h2>
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <div className="mb-4">
-                <h3 className="text-lg font-bold text-gray-900">Bachelor of Informatics Engineering</h3>
-                <p className="text-gray-600">Muhammadiyah University Tangerang</p>
-                <p className="text-gray-500 text-sm">GPA: 3.44</p>
-              </div>
+            <div className="bg-gray-50 rounded-lg p-6">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Bachelor of Informatics Engineering</h3>
+              <p className="text-gray-600">Muhammadiyah University Tangerang</p>
+              <p className="text-gray-500 text-sm">GPA: 3.44</p>
             </div>
           </div>
 
-          <div className="mt-12">
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Professional Experience</h2>
-
+            
             <div className="mb-8">
               <div className="flex items-center space-x-4 mb-3">
-                <h3 className="text-xl font-bold text-gray-900">PT. Chocomory Cokelat Persada</h3>
+                <h3 className="text-lg font-bold text-gray-900">PT. Chocomory Cokelat Persada</h3>
                 <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Senior Production Supervisor</span>
               </div>
               <p className="text-gray-600">July 2023 – Present</p>
@@ -130,7 +71,7 @@ async function AboutPage() {
 
             <div className="mb-8 border-t border-gray-200 pt-8">
               <div className="flex items-center space-x-4 mb-3">
-                <h3 className="text-xl font-bold text-gray-900">PT. Kobe Boga Utama</h3>
+                <h3 className="text-lg font-bold text-gray-900">PT. Kobe Boga Utama</h3>
                 <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Formulation Centre</span>
               </div>
               <p className="text-gray-600">October 2017 – February 2023</p>
@@ -161,8 +102,8 @@ async function AboutPage() {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </section>
+    </>
   );
 }
 

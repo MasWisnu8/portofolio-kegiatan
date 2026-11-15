@@ -1,10 +1,10 @@
 import Link from "next/link";
 import ImageFallback from "@/components/ImageFallback";
-import { getProfile, getActivities } from "@/lib/db";
+import { getProfileData, getActivitiesData } from "@/lib/db-static";
 
 async function HomePage() {
-  const profile = getProfile();
-  const activities = getActivities();
+  const profile = getProfileData();
+  const activities = await getActivitiesData();
 
   return (
     <>
@@ -70,13 +70,13 @@ async function HomePage() {
       </section>
 
       {/* Contact Info Section */}
-      {profile.contact_email || profile.location || profile.website ? (
+      {(profile.contact_email || profile.location || profile.website) ? (
         <section className="bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {profile.contact_email && (
                 <div className="text-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-centermx-auto">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
                     <svg className="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26m0 0l7.89-5.26m-7.89 5.26L3 8zm10.89-3.26l6.18 3.59m0 0l-6.18-3.59m7.89 8.26l-6.18-3.59m0 0l-6.18 3.59" />
                     </svg>
@@ -113,7 +113,6 @@ async function HomePage() {
       {/* Main Portfolio Content */}
       <main className="bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          {/* Hero Text */}
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Professional Portfolio
@@ -123,7 +122,6 @@ async function HomePage() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <Link href="#about" className="group bg-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
@@ -155,7 +153,6 @@ async function HomePage() {
             </Link>
           </div>
 
-          {/* About Section */}
           <div id="about" className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">About Me</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -181,7 +178,6 @@ async function HomePage() {
             </div>
           </div>
 
-          {/* Education */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-12">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Education</h2>
             <div className="bg-gray-50 rounded-lg p-6">
@@ -191,7 +187,6 @@ async function HomePage() {
             </div>
           </div>
 
-          {/* Experience */}
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Professional Experience</h2>
             

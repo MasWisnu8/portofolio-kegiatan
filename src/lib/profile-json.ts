@@ -1,0 +1,16 @@
+// Static profile data for public pages (works with static export on GitHub Pages)
+
+export const profile = {
+  id: "main",
+  name: "Wisnu Pandu Hidayat",
+  title: "Production Professional",
+  subtitle: "Production Manager with 8+ Years Experience",
+  bio: "Production professional with over 8 years of experience in the food manufacturing industry specializing in Production Management, PPIC, Warehouse Operations, Supply Chain Coordination, Inventory Management, Process Improvement, and Manufacturing Excellence.",
+  contact_email: "Wisnupanduhidayat@gmail.com",
+  contact_phone: "",
+  location: "Bandung, Indonesia",
+  website: "www.linkedin.com/in/wisnu-pandu-hidayat-6a7468257",
+  photo_url: "/uploads/profile.jpg"
+};
+
+export default profile;

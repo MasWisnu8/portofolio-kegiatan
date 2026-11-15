@@ -29,24 +29,19 @@ jobs:
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
 
-      - name: Install build tools
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3 make g++
-
       - name: Install dependencies
         run: npm ci
-
-      - name: Rebuild better-sqlite3 for Node 20
-        run: npm rebuild better-sqlite3
 
       - name: Build
         run: npm run build
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .next
+          path: ./out
 
   deploy:
     needs: build
