@@ -13,7 +13,6 @@ dev.db-journal
 *.db-wal
 
 # Uploads (uploaded files)
-uploads/
 
 # misc
 .DS_Store
