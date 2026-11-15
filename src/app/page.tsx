@@ -3,7 +3,7 @@ import ImageFallback from "@/components/ImageFallback";
 import { getProfileData, getActivitiesData } from "@/lib/db-static";
 
 async function HomePage() {
-  const profile = getProfileData();
+  const profile = await getProfileData();
   const activities = await getActivitiesData();
 
   return (
@@ -267,4 +267,6 @@ async function HomePage() {
   );
 }
 
+
+export const dynamic = 'force-dynamic';
 export default HomePage;

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getProfileData, getActivityBySlug } from "@/lib/db-static";
+import { getProfileData, getActivityBySlug, getActivitiesData } from "@/lib/db-static";
 
 async function ActivityPage({ params }: { params: { slug: string } }) {
   const profile = getProfileData();
@@ -39,4 +39,8 @@ async function ActivityPage({ params }: { params: { slug: string } }) {
   );
 }
 
+
+
+
+export const dynamic = 'force-dynamic';
 export default ActivityPage;

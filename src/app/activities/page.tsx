@@ -39,4 +39,6 @@ async function ActivitiesPage() {
   );
 }
 
+
+export const dynamic = 'force-dynamic';
 export default ActivitiesPage;

@@ -3,8 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  output: 'export',
-  basePath: '/portofolio-kegiatan',
+  basePath: '',
   trailingSlash: true,
 };
 

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";
+import { getAllActivities } from "@/lib/db-static";
 
 interface Activity {
   id: string;

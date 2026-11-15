@@ -85,4 +85,6 @@ async function ContactPage() {
   );
 }
 
+
+export const dynamic = 'force-dynamic';
 export default ContactPage;

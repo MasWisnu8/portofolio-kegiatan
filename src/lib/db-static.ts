@@ -1,5 +1,14 @@
-// Static data for public pages (loaded from JSON files)
-// This works with GitHub Pages static export
+// Static data for public pages (loaded directly from public/data/*.json via fs)
+// Works in development, production build, and Vercel serverless functions.
+import fs from "fs";
+import path from "path";
+
+const DATA_DIR = path.resolve(process.cwd(), "public", "data");
+
+function readJson(filename: string): any {
+  const file = path.join(DATA_DIR, filename);
+  return JSON.parse(fs.readFileSync(file, "utf-8"));
+}
 
 export interface Activity {
   id: string;
@@ -34,32 +43,28 @@ export interface Profile {
 }
 
 // Profile data (from public/data/profile.json)
-export async function getProfile(): Promise<Profile> {
-  const res = await fetch('/data/profile.json');
-  return res.json();
+export async function getProfileData(): Promise<Profile> {
+  return readJson("profile.json");
 }
 
 // Activities data (from public/data/activities.json)
-export async function getActivities(): Promise<Activity[]> {
-  const res = await fetch('/data/activities.json');
-  return res.json();
+export async function getActivitiesData(): Promise<Activity[]> {
+  return readJson("activities.json");
 }
 
 export async function getActivityBySlug(slug: string): Promise<Activity | null> {
-  const activities = await getActivities();
-  return activities.find(a => a.slug === slug) || null;
+  const activities = await getActivitiesData();
+  return activities.find((a) => a.slug === slug) || null;
 }
 
 export async function getAllActivities(): Promise<Activity[]> {
-  return getActivities();
+  return getActivitiesData();
 }
 
 export async function getMediaByActivity(activityId: string): Promise<Media[]> {
-  // Load media data
   try {
-    const res = await fetch('/data/media.json');
-    const data = await res.json();
-    return data.filter(m => m.activity_id === activityId);
+    const data = readJson("media.json");
+    return data.filter((m: any) => m.activity_id === activityId);
   } catch {
     return [];
   }

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getProfileData } from "@/lib/db-static";
 
 async function AboutPage() {
-  const profile = getProfileData();
+  const profile = await getProfileData();
 
   return (
     <>
@@ -107,4 +107,6 @@ async function AboutPage() {
   );
 }
 
+
+export const dynamic = 'force-dynamic';
 export default AboutPage;

@@ -1,107 +1,56 @@
 [
   {
-    "id": "ek45i2g0dmwg4c727nf2ihr",
-    "activity_id": "act_001",
+    "id": "med_001",
     "file_url": "/uploads/activities/act_001_01.jpg",
     "file_type": "image",
     "sort_order": 1
   },
   {
-    "id": "flxn8eafcmwg4c729p819ox",
-    "activity_id": "act_001",
+    "id": "med_002",
     "file_url": "/uploads/activities/act_001_02.jpg",
     "file_type": "image",
     "sort_order": 2
   },
   {
-    "id": "bhgmbxdr0mwg4c72awiiffe",
-    "activity_id": "act_001",
+    "id": "med_003",
     "file_url": "/uploads/activities/act_001_03.jpg",
     "file_type": "image",
     "sort_order": 3
   },
   {
-    "id": "w0lj2o979mwg4c72bg7l4co",
-    "activity_id": "act_001",
-    "file_url": "/uploads/activities/act_001_04.jpg",
-    "file_type": "image",
-    "sort_order": 4
-  },
-  {
-    "id": "6syb4nfnamwg4c72fpohyyu",
-    "activity_id": "act_001",
-    "file_url": "/uploads/activities/act_001_video.mp4",
-    "file_type": "video",
-    "sort_order": 5
-  },
-  {
-    "id": "5s16npcugmwg4c72gnpmstl",
-    "activity_id": "act_002",
+    "id": "med_004",
     "file_url": "/uploads/activities/act_002_01.jpg",
     "file_type": "image",
     "sort_order": 1
   },
   {
-    "id": "58r28hueemwg4c72hmjc76m",
-    "activity_id": "act_002",
+    "id": "med_005",
     "file_url": "/uploads/activities/act_002_02.jpg",
     "file_type": "image",
     "sort_order": 2
   },
   {
-    "id": "xxeva5jp8mwg4c72ielyyt3",
-    "activity_id": "act_002",
-    "file_url": "/uploads/activities/act_002_03.jpg",
-    "file_type": "image",
-    "sort_order": 3
-  },
-  {
-    "id": "hi8omx6ofmwg4c72kf19bhj",
-    "activity_id": "act_002",
-    "file_url": "/uploads/activities/act_002_04.jpg",
-    "file_type": "image",
-    "sort_order": 4
-  },
-  {
-    "id": "qca5onqb7mwg4c72ltsgoy4",
-    "activity_id": "act_002",
-    "file_url": "/uploads/activities/act_002_video.mp4",
-    "file_type": "video",
-    "sort_order": 5
-  },
-  {
-    "id": "slhldazypmwg4c72o7leivz",
-    "activity_id": "act_003",
+    "id": "med_006",
     "file_url": "/uploads/activities/act_003_01.jpg",
     "file_type": "image",
     "sort_order": 1
   },
   {
-    "id": "r3gr4bn7xmwg4c72ponhi19",
-    "activity_id": "act_003",
-    "file_url": "/uploads/activities/act_003_02.jpg",
+    "id": "med_007",
+    "file_url": "/uploads/activities/act_004_01.jpg",
+    "file_type": "image",
+    "sort_order": 1
+  },
+  {
+    "id": "med_008",
+    "file_url": "/uploads/activities/act_004_02.jpg",
     "file_type": "image",
     "sort_order": 2
   },
   {
-    "id": "a15a4ozjumwg4c72r5d9n0l",
-    "activity_id": "act_003",
-    "file_url": "/uploads/activities/act_003_03.jpg",
+    "id": "med_009",
+    "file_url": "/uploads/activities/act_005_01.jpg",
     "file_type": "image",
-    "sort_order": 3
-  },
-  {
-    "id": "nodqgf22bmwg4c72u1u3jhf",
-    "activity_id": "act_003",
-    "file_url": "/uploads/activities/act_003_04.jpg",
-    "file_type": "image",
-    "sort_order": 4
-  },
-  {
-    "id": "idlvm83p7mwg4c72w4lqpq7",
-    "activity_id": "act_003",
-    "file_url": "/uploads/activities/act_003_video.mp4",
-    "file_type": "video",
-    "sort_order": 5
+    "sort_order": 1
   }
 ]

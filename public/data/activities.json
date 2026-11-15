@@ -1,29 +1,52 @@
 [
   {
     "id": "act_001",
-    "title": "Pesta Perpisahan Serius",
-    "slug": "pesta-perpisahan-serius",
-    "description": "Pesta Perpisahan Serius adalah acara pernikahan yang memadukan nuansa tradisional Jawa dengan sentuhan modern dan surreal. Acara ini dirancang untuk menciptakan momen tak terlupakan bagi setiap tamu, dengan dekorasi yang kaya detail, tarian tradisional, serta foto-foto yang menangkap kesan emosional setiap detik.",
-    "category": "Pernikahan",
+    "title": "Optimasi OEE & Pengurangan Reject Produksi",
+    "slug": "optimasi-oee-dan-pengurangan-reject",
+    "description": "Menerapkan Lean Manufacturing dan perbaikan proses produksi untuk meningkatkan stabilitas, mengurangi reject, serta menaikkan OEE produksi.",
+    "category": "Continuous Improvement",
     "cover_image": "/uploads/activities/act_001_cover.jpg",
-    "video_url": "/uploads/activities/act_001_video.mp4"
+    "video_url": "/uploads/activities/act_001_video.mp4",
+    "created_at": "2026-08-01"
   },
   {
     "id": "act_002",
-    "title": "Resepsimala Modern & Elegance",
-    "slug": "resepsi-moderne-elegance",
-    "description": "Resepsimala Modern & Elegance adalah perayaan pernikahan dengan desain interior ceria, kecondangan ceria, dan cahaya tak bertele-tele. Setiap sudut kompleks diciptakan agar baper terasa hangat, manis, dan macet benar.",
-    "category": "Pernikahan",
+    "title": "Pengembangan Garis Produksi & Ekspansi Pabrik",
+    "slug": "pengembangan-garis-produksi-dan-ekspansi-pabrik",
+    "description": "Mendukung pengembangan line produksi baru dan proyek ekspansi pabrik, termasuk perencanaan, instalasi, dan pemasangan peralatan.",
+    "category": "Plant Engineering",
     "cover_image": "/uploads/activities/act_002_cover.jpg",
-    "video_url": "/uploads/activities/act_002_video.mp4"
+    "video_url": "/uploads/activities/act_002_video.mp4",
+    "created_at": "2026-07-01"
   },
   {
     "id": "act_003",
-    "title": "Festival Kuliner & Seni Daerah",
-    "slug": "festival-kuliner-seni-daerah",
-    "description": "Festival Kuliner & Seni Daerah adalah perhelatan tahunan yang memperkenalkan kuliner dan seni lokal dari seluruh pelosok negeri. Tamu dapat mengonsumsi makanan khas, menonton panggung seni, serta berinteraksi dengan pelaku seni dan kuliner.",
-    "category": "Festival",
+    "title": "Perencanaan Produksi & Pengendalian Inventori (PPIC)",
+    "slug": "perencanaan-produksi-dan-pengendalian-inventori",
+    "description": "Menyiapkan rencana produksi tahunan, mingguan, dan harian berdasarkan prediksi penjualan, menghitung kebutuhan bahan baku, serta memantau tingkat persediaan.",
+    "category": "PPIC",
     "cover_image": "/uploads/activities/act_003_cover.jpg",
-    "video_url": "/uploads/activities/act_003_video.mp4"
+    "video_url": "/uploads/activities/act_003_video.mp4",
+    "created_at": "2026-06-01"
+  },
+  {
+    "id": "act_004",
+    "title": "Dashboard KPI Produksi & Pengendalian Mutu",
+    "slug": "dashboard-kpi-produksi-dan-pengendalian-mutu",
+    "description": "Membangun dashboard KPI safety, quality, delivery, productivity, dan cost (SQDC) untuk monitoring harian serta tindakan korektif.",
+    "category": "KPIs & Quality",
+    "cover_image": "/uploads/activities/act_004_cover.jpg",
+    "video_url": "/uploads/activities/act_004_video.mp4",
+    "created_at": "2026-05-01"
+  },
+  {
+    "id": "act_005",
+    "title": "Pengendalian Rantai Pasok & Pengadaan",
+    "slug": "pengendalian-rangkaian-pasok-dan-pengadaan",
+    "description": "Koordinasi jadwal pengadaan dengan Procurement, memastikan ketersediaan bahan baku, serta mengelola persediaan selesai untuk memenuhi kebutuhan pelanggan.",
+    "category": "Supply Chain",
+    "cover_image": "/uploads/activities/act_005_cover.jpg",
+    "video_url": "/uploads/activities/act_005_video.mp4",
+    "created_at": "2026-04-01"
   }
 ]
