@@ -31,6 +31,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Rebuild better-sqlite3 for Node 20
+        run: npm rebuild better-sqlite3
+
       - name: Build
         run: npm run build
 
